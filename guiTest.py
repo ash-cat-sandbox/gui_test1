@@ -17,6 +17,7 @@ def main():
             layout_scene2 = scene2_layout.create_scene2_layout()
             window.close()
             window = sg.Window('New Game', layout=layout_scene2)
+            scene2_layout.draw_green_rectangle(window.finalize())
         elif event == 'Back':
            layout_main = main_layout.create_main_layout()
            window.close()
